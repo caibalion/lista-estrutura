@@ -12,17 +12,17 @@ public class Q6 {
         altura = sc.nextDouble();
         System.out.print("Digite seu sexo: \n1 - Masculino\n2 - Feminino \n");
         sexo = sc.nextInt();
-        calcIMC(altura, sexo);
+        calcIMC(nome, altura, sexo);
     }
 
-    public static void calcIMC(double altura, int sexo) {
+    public static void calcIMC(String nome, double altura, int sexo) {
         double IMC;
         if (sexo == 2) {
             IMC = (62.1 * altura) - 44.7;
-            System.out.println("IMC = " + IMC);
+            System.out.println("IMC - " + nome + "=" + IMC);
         } else {
             IMC = (72.7 * altura) - 58;
-            System.out.printf("%.2f","IMC = " + IMC);
+            System.out.println("IMC - " + nome + "=" + IMC);
         }
     }
 }
