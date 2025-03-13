@@ -1,3 +1,5 @@
+package revisaojava;
+
 public class Q9 {
     public static void main(String[] args) {
         for (var i = 1; i <= 50; i++) {

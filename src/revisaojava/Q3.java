@@ -1,3 +1,5 @@
+package revisaojava;
+
 import java.util.Scanner;
 
 public class Q3 {
