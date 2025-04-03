@@ -1,15 +1,11 @@
-package listaEncadeada;
+package playlistIsabel;
 
-public class ListaEncadeada {
-
-
+public class PlaylistIsabel {
     private Celula primeiro;
     private Celula ultimo;
     private Celula posicaoAtual;
 
-
-    public void adicionar(Contato valor) {
-
+    public void adicionar(Musica valor) {
         Celula celula = new Celula();
         celula.setValor(valor);
         if (primeiro == null && ultimo == null) {
@@ -19,9 +15,7 @@ public class ListaEncadeada {
             ultimo.setProximo(celula);
             ultimo = celula;
         }
-
     }
-
 
     public boolean temProximo() {
         if (primeiro == null) {
@@ -34,7 +28,6 @@ public class ListaEncadeada {
             posicaoAtual = posicaoAtual.getProximo();
             return temProximo;
         }
-
     }
 
     public void remover() {
@@ -58,6 +51,4 @@ public class ListaEncadeada {
     public Celula getPosicaoAtual() {
         return posicaoAtual;
     }
-
-
 }

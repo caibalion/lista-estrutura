@@ -1,17 +1,14 @@
-package listaEncadeada;
+package playlistIsabel;
 
 public class Celula {
-
-    //| juvenal    |  |-->| Diego    |  |-->| Filipe    |  |-->| Arthur    |  |-->
-    // valor     proximo
-    private Contato valor;
+    private Musica valor;
     private Celula proximo;
 
-    public Contato getValor() {
+    public Musica getValor() {
         return valor;
     }
 
-    public void setValor(Contato valor) {
+    public void setValor(Musica valor) {
         this.valor = valor;
     }
 
@@ -22,6 +19,4 @@ public class Celula {
     public void setProximo(Celula proximo) {
         this.proximo = proximo;
     }
-
-
 }
